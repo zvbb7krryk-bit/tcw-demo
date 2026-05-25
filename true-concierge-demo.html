@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>True Concierge Worldwide — Luxury Transportation</title>
+<title>Rain Concierge Worldwide — Luxury Transportation</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -34,6 +34,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content
 /* HERO */
 .hero{position:relative;height:100vh;overflow:hidden;display:flex;align-items:flex-end}
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+@media(max-width:768px){
+  .hero-video{
+    object-fit:cover;
+    object-position:center center;
+    transform:scale(0.92);
+    transform-origin:center center;
+  }
+}
 .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(7,7,7,0.15) 0%,rgba(7,7,7,0.05) 40%,rgba(7,7,7,0.65) 75%,rgba(7,7,7,0.98) 100%)}
 .hero-content{position:relative;z-index:2;width:100%;padding:0 4rem 5rem;display:flex;flex-direction:column;align-items:flex-start}
 @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
@@ -186,7 +194,7 @@ footer p{font-size:0.65rem;color:var(--muted)}
 <!-- NAV -->
 <nav>
   <div>
-    <div class="nav-logo">True Concierge<span>Worldwide Luxury Transportation</span></div>
+    <div class="nav-logo">Rain Concierge<span>Worldwide Luxury Transportation</span></div>
   </div>
   <div class="nav-links">
     <a href="#services">Services</a>
@@ -222,13 +230,28 @@ footer p{font-size:0.65rem;color:var(--muted)}
   <div class="sbar-item"><span class="sbar-val">100%</span><span class="sbar-lbl">Luxury Standard</span></div>
 </div>
 
+
+<!-- SECOND HERO VIDEO — SPRINTER -->
+<div style="position:relative;height:65vh;overflow:hidden;background:#070707">
+  <video style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.8)" autoplay muted loop playsinline>
+    <source src="tcw-sprinter-hero.mp4" type="video/mp4">
+  </video>
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(7,7,7,0.97),transparent 60%);z-index:1"></div>
+  <div style="position:absolute;bottom:0;left:0;right:0;z-index:2;padding:3rem 4rem">
+    <span style="font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.75rem">Luxury Sprinter Fleet</span>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:300;color:#fff;line-height:1.1;margin-bottom:0.5rem">Travel Together, <em style="font-style:italic;color:var(--gold)">In Style</em></h2>
+    <p style="font-size:0.9rem;color:rgba(240,235,224,0.6);max-width:500px;line-height:1.7">Premium Mercedes Sprinters for groups who refuse to compromise on comfort — city skyline views and luxury finishes included.</p>
+  </div>
+</div>
+<div class="cinema-sep"></div>
+
 <!-- ABOUT -->
 <section class="about-sec">
   <div class="about-inner">
     <div class="reveal">
       <span class="tag">Who We Are</span>
       <h2 class="sec-title">Premium Transportation, Elevated to an Art Form</h2>
-      <p class="about-p">What began in Memphis has evolved into a national luxury transportation network operating across 30+ major metropolitan areas. True Concierge delivers premium black car, executive transportation, and private aviation experiences — powered by a nationwide affiliate network and trusted by elite athletes, executives, and VIP clients worldwide.</p>
+      <p class="about-p">What began in Memphis has evolved into a national luxury transportation network operating across 30+ major metropolitan areas. Rain Concierge delivers premium black car, executive transportation, and private aviation experiences — powered by a nationwide affiliate network and trusted by elite athletes, executives, and VIP clients worldwide.</p>
       <p class="about-p">From the tarmac to the boardroom, we provide seamless, discreet, and punctual service that lets you focus on what matters most. Our blend of Southern hospitality and global standards ensures every mile is traveled in absolute comfort.</p>
     </div>
     <div class="about-stats reveal">
@@ -321,7 +344,7 @@ footer p{font-size:0.65rem;color:var(--muted)}
 <!-- WHY -->
 <section class="why-sec">
   <div class="why-inner">
-    <span class="tag reveal">Why True Concierge</span>
+    <span class="tag reveal">Why Rain Concierge</span>
     <h2 class="sec-title reveal">The Standard Others Aspire To</h2>
     <div class="why-grid reveal">
       <div class="wc"><div class="wc-icon">🎯</div><div class="wc-name">Always On Time</div><p class="wc-desc">Real-time flight tracking and 24/7 availability means we're there before you need us.</p></div>
@@ -339,7 +362,7 @@ footer p{font-size:0.65rem;color:var(--muted)}
   <div class="coverage-inner">
     <span class="tag reveal">Nationwide Coverage</span>
     <h2 class="sec-title reveal">Wherever You Need to Go</h2>
-    <p class="reveal" style="color:var(--muted);line-height:1.85;max-width:560px;font-size:0.92rem">True Concierge operates across 30+ major U.S. cities through our trusted affiliate network — delivering the same luxury standard coast to coast.</p>
+    <p class="reveal" style="color:var(--muted);line-height:1.85;max-width:560px;font-size:0.92rem">Rain Concierge operates across 30+ major U.S. cities through our trusted affiliate network — delivering the same luxury standard coast to coast.</p>
     <div class="cities-grid reveal">
       <div class="city"><span class="city-icon">🎵</span><span class="city-name">Memphis</span><span class="city-state">Tennessee</span></div>
       <div class="city"><span class="city-icon">🎸</span><span class="city-name">Nashville</span><span class="city-state">Tennessee</span></div>
@@ -356,7 +379,7 @@ footer p{font-size:0.65rem;color:var(--muted)}
   <div class="booking-inner">
     <span class="tag reveal">Reserve Your Ride</span>
     <h2 class="sec-title reveal">Book Your Experience</h2>
-    <p class="booking-p reveal">Whether it's a black car, Sprinter, or private jet — True Concierge is ready. Fill out the form and we'll confirm your reservation within the hour.</p>
+    <p class="booking-p reveal">Whether it's a black car, Sprinter, or private jet — Rain Concierge is ready. Fill out the form and we'll confirm your reservation within the hour.</p>
     <form class="bform reveal" onsubmit="submitForm(event)">
       <div class="frow">
         <div class="fg"><label>First Name</label><input type="text" placeholder="First name" required></div>
@@ -364,7 +387,7 @@ footer p{font-size:0.65rem;color:var(--muted)}
       </div>
       <div class="frow">
         <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
-        <div class="fg"><label>Phone</label><input type="tel" placeholder="(888) 216-1064"></div>
+        <div class="fg"><label>Phone</label><input type="tel" placeholder="(888) 000-0000"></div>
       </div>
       <div class="frow">
         <div class="fg"><label>Service Needed</label>
@@ -402,7 +425,7 @@ footer p{font-size:0.65rem;color:var(--muted)}
     <span class="rain-tagline">Cinematic Listings. Lasting Impressions.</span>
     <div class="rain-divider"></div>
     <p class="rain-desc">We build cinematic web experiences for luxury brands, realtors, and service businesses. If your brand deserves a page this powerful — let's talk.</p>
-    <a href="mailto:sharainak@rainmanagementsolutionsllc.com?subject=I want a page like True Concierge!" class="rain-cta">Get Your Cinematic Page →</a>
+    <a href="mailto:sharainak@rainmanagementsolutionsllc.com?subject=I want a page like Rain Concierge!" class="rain-cta">Get Your Cinematic Page →</a>
     <div class="rain-contact">
       <a href="mailto:sharainak@rainmanagementsolutionsllc.com">✉️ sharainak@rainmanagementsolutionsllc.com</a>
     </div>
@@ -411,9 +434,9 @@ footer p{font-size:0.65rem;color:var(--muted)}
 
 <!-- FOOTER -->
 <footer>
-  <div class="foot-logo">True Concierge Worldwide<span>Premium Luxury Transportation</span></div>
-  <p>(888) 216-1064 · reservations@trueconcierge.com</p>
-  <p>© 2026 True Concierge · All Rights Reserved</p>
+  <div class="foot-logo">Rain Concierge Worldwide<span>Premium Luxury Transportation</span></div>
+  <p>(888) 000-0000 · reservations@eliteblackcar.com</p>
+  <p>© 2026 Rain Concierge · All Rights Reserved</p>
 </footer>
 
 <script>
